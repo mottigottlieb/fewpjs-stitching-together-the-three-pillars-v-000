@@ -22,7 +22,7 @@ function likeCallback(e) {
     .then(function(serverMessage){
       // STEP 2: Uncomment the next 3 lines.
       // We'll use Pillar 1 (DOM Manipulation) to update the screen and
-      // mimic Pillar 3 (Server Communication) to only update the screen if the
+      // mimic Pillar 3 (Server Communication) to only update the screen /if the
       // sending of information to the server succeeds.
       alert("You notified the server!");
       // alert(serverMessage);
@@ -33,13 +33,13 @@ function likeCallback(e) {
       alert("Something went wrong!");
     });
 }
-
+/
 // STEP 3: In order for the call to the server and the update of the screen to
 // work, the elements we identify in STEP 1 need to be told to run that update
 // code when an "event" is fired. That's Pillar 2, event handling. Uncomment
 // this code.
 
-//for (let glyph of articleHearts) {
+///for (let glyph of articleHearts) {
   //glyph.addEventListener("click", likeCallback);
 //}
 
@@ -52,7 +52,7 @@ function likeCallback(e) {
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
-//------------------------------------------------------------------------------
+///------------------------------------------------------------------------------
 
 function mimicServerCall() {
   return new Promise(function(resolve, reject) {
